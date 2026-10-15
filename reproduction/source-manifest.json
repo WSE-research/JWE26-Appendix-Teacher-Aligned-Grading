@@ -1,0 +1,116 @@
+[
+  {
+    "file": "reproduction/human-reference/experiments/scripts/21_label_partial_credit.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "225061256f988e54fcec8fa9d2d6cb8647b796d8",
+    "path": "experiments/scripts/21_label_partial_credit.py",
+    "sha256": "7df79338a5a2c9463b92ff3728d89426c704806819cd54d07b3cb03c044d80de",
+    "original_sha256": "8e5d0a6849c8366d48e811e194b48694fb19cf98db2f505c199521c8c309856a",
+    "modification": "Docstring only: replaced the literal student-answer quotation and item-specific count with a generic duplicate-answer description; executable AST unchanged."
+  },
+  {
+    "file": "reproduction/human-reference/experiments/scripts/24_adjudicate_partial_credit.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "225061256f988e54fcec8fa9d2d6cb8647b796d8",
+    "path": "experiments/scripts/24_adjudicate_partial_credit.py",
+    "sha256": "d3f7338142d886786b1162781d7e08384624fb683979df3bf2cbd671775919b5"
+  },
+  {
+    "file": "reproduction/human-reference/experiments/scripts/25_partial_credit_model_vs_human.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "225061256f988e54fcec8fa9d2d6cb8647b796d8",
+    "path": "experiments/scripts/25_partial_credit_model_vs_human.py",
+    "sha256": "6adccea54b59f7438efb19b2ffb86487e2557fc56cb805308fa705e05b07e533"
+  },
+  {
+    "file": "reproduction/human-reference/experiments/scripts/29_binary_runs_vs_human_reference.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "225061256f988e54fcec8fa9d2d6cb8647b796d8",
+    "path": "experiments/scripts/29_binary_runs_vs_human_reference.py",
+    "sha256": "59fe6745cf53ceb8629ab79095d09ff222493d5d7a9ec94246cc151857090366"
+  },
+  {
+    "file": "reproduction/human-reference/experiments/scripts/32_paired_model_vs_label_kappa.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "225061256f988e54fcec8fa9d2d6cb8647b796d8",
+    "path": "experiments/scripts/32_paired_model_vs_label_kappa.py",
+    "sha256": "adb4ca75731b97b6c5bd4fa9b22344afe70268d74cbb3138cf39db4ae4e7ba7a"
+  },
+  {
+    "file": "reproduction/human-reference/experiments/scripts/manual_eval_utils.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "225061256f988e54fcec8fa9d2d6cb8647b796d8",
+    "path": "experiments/scripts/manual_eval_utils.py",
+    "sha256": "451c3c0e3fa91eca38ae7509847e063986e078ea568babbbd1c27ca77aa45601"
+  },
+  {
+    "file": "reproduction/human-reference/experiments/scripts/jwe_run_manifest.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "225061256f988e54fcec8fa9d2d6cb8647b796d8",
+    "path": "experiments/scripts/jwe_run_manifest.py",
+    "sha256": "9f0e8cedfd5322187ea66a77a6a69a5937fe088176c78f2094e8d86dacc3fdd2"
+  },
+  {
+    "file": "reproduction/human-reference/experiments/scripts/label_safety.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "225061256f988e54fcec8fa9d2d6cb8647b796d8",
+    "path": "experiments/scripts/label_safety.py",
+    "sha256": "58e395fdad5dcff2674f4d468aabf34f80f82f473cab21a4528f0d86e046a84d"
+  },
+  {
+    "file": "reproduction/teacher-alignment/experiments/scripts/13_significance_testing.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "1c07b366191ce66e10fd9aa9a3b98f5b13706f16",
+    "path": "experiments/scripts/13_significance_testing.py",
+    "sha256": "824343cfc200d17834d30874c5a93d146755ef23bdf88647b78156de0edc0387"
+  },
+  {
+    "file": "reproduction/teacher-alignment/experiments/scripts/26_rationale_score_consistency.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "1c07b366191ce66e10fd9aa9a3b98f5b13706f16",
+    "path": "experiments/scripts/26_rationale_score_consistency.py",
+    "sha256": "46c6beb0330e0289e2780dcaa2581fae098bf0d2b397a4a54bf1367c6f4e6769"
+  },
+  {
+    "file": "reproduction/teacher-alignment/experiments/scripts/30_jwe_feedback_curves.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "1c07b366191ce66e10fd9aa9a3b98f5b13706f16",
+    "path": "experiments/scripts/30_jwe_feedback_curves.py",
+    "sha256": "adb492a184ff0525204a165720a72827fe25c777fcaca29ccf33b5fa593fab26"
+  },
+  {
+    "file": "reproduction/teacher-alignment/experiments/scripts/31_jwe_n40_agreement.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "1c07b366191ce66e10fd9aa9a3b98f5b13706f16",
+    "path": "experiments/scripts/31_jwe_n40_agreement.py",
+    "sha256": "dbee42772bc5434d85d70589449f8e8fe04644db0e64b3e136cb6d551ba5fe3d"
+  },
+  {
+    "file": "reproduction/teacher-alignment/experiments/scripts/jwe_pinned_inputs.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "1c07b366191ce66e10fd9aa9a3b98f5b13706f16",
+    "path": "experiments/scripts/jwe_pinned_inputs.py",
+    "sha256": "063af25ead934ae16dbca1754a6ea5280b05ccba99ea851ccbfcb369a0ca6161"
+  },
+  {
+    "file": "reproduction/rationale-judge/experiments/judge_20260918/collect.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "3dcd7fbab3d1b69a4f79fa4b87d783cd2f8f64c0",
+    "path": "experiments/judge_20260918/collect.py",
+    "sha256": "2d76ec13e3aa6930b3030e905e8dc56e69510cf46c1185bb75fa2dffdb5becd9"
+  },
+  {
+    "file": "reproduction/rationale-judge/experiments/judge_20260918/compare_scores.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "3dcd7fbab3d1b69a4f79fa4b87d783cd2f8f64c0",
+    "path": "experiments/judge_20260918/compare_scores.py",
+    "sha256": "c6a5cc9f78a34a9ddc6a7a398247c1cae6ae6b7b31fa6e44148a9fe76ddcb7cf"
+  },
+  {
+    "file": "reproduction/rationale-judge/experiments/judge_20260918/frozen_lexicon.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "3dcd7fbab3d1b69a4f79fa4b87d783cd2f8f64c0",
+    "path": "experiments/judge_20260918/frozen_lexicon.py",
+    "sha256": "067d0f363e4ea2d0dcaa6b1ffd60338b67a8ea52151961cc954f578d0f1ff461"
+  }
+]

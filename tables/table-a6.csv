@@ -1,0 +1,7 @@
+Model,ICWE run,Gate run,Diff. (pp),Within \pm 3
+Claude Haiku 4.5,90.67,91.11,+0.44,yes
+DeepSeek V3.2,90.00,89.78,-0.22,yes
+Qwen3.5-397B-A17B,89.33,89.33,0.00,yes
+Gemini 2.5 Flash-Lite,86.00,84.00,-2.00,yes
+GLM-4.7 Flash,81.78,82.67,+0.89,yes
+"Gemini 2.5 Flash-Lite, repeat",86.00,83.56,-2.44,(control)

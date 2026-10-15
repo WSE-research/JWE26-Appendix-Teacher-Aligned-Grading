@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "enum": [
+        "supports_correct",
+        "supports_incorrect",
+        "undetermined"
+      ]
+    },
+    "evidence": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "label",
+    "evidence"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+Study,Data,Reference labels,Scale,Measures
+Zhao [25],3 public ASAG benchmarks; proofs,Existing instructor grades,0–100; 7 binary proof items,"RMSE, Pearson r, item accuracy"
+Deng [6],SciEntsBank,Inherited benchmark labels,Nominal 2/3/5-way categories,"Accuracy, \kappa, coverage, perturbations"
+Lai [12],"4,109 responses",18 experts: annotation and verification,Overall and step scores; error causes,"QWK, CCS, ECS, Micro-F1"
+Armfield [2],"Pilot, 507 submissions","Calibration, self-grades, dispute review",Rubric items with points,"Student–agent agreement, overturns"
+Korthals [11],"6,345 question attempts",Course graders blind to model grades,"0–1 per task, fractional","Agreement, r, audit, survey"
+Sunkavalli [21],"2,377 essays, 12 hosted judges",Pooled scores (PT); two raters (EN),0–200 per competency; holistic,"Severity, halo, dependability, drift"
+Gur-Arieh [8],"Traces of 10 models, 13 tasks","Task-derived labels, sampled checks",Binary faithfulness,"Metric AUROC, runtime"
+Rodrı́guez [19],One-term course deployment,Instructor rulings on regrade requests,"Binary rubric items, summed","Appeal error rate, survey, cohorts"
+Dadu [5],Mohler dataset,Mean of two independent evaluators,0–5 in half points,"RMSE, indecisiveness, referral"
+ICWE [10],"Git course, 450 pairs",Binary teacher ratings (manual review),Binary,"Accuracy, calibration error, coverage, tokens"
+ICALT [9],"Same course, 1,056 responses",Majority of reconstructed binary labels; 157 dual-rated,Binary,"Agreement, \kappa, coverage and risk"
+This article,"Same course, 9 questions, 439 texts, 450 rows","Lecturer-reviewed operational binary labels; two independent model-blind codings, adjudicated for distances of two or more levels","Binary; raw 0–4, mapped to 0/1/2 or binarized","Agreement, \kappa, QWK, equivalence, consistency, coverage"

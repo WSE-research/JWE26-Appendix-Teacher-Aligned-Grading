@@ -1,0 +1,16 @@
+{
+  "source": "PhD Central/experiments/figures/2026-10-12_jwe-human-agreement",
+  "accessed": "2026-10-15",
+  "source_script_sha256": "103f3ae9d8aa254c261e4bbd1add2427c992115f8791d51bd4ecdee1b5ebe117",
+  "derivation": "Retain three existing plotting functions, needed constants and CSV reader; strict save and PNG preview added. JSON input reduced by explicit aggregate-field allowlists; numbers untouched.",
+  "source_files": {
+    "teacher_label_crosstab.csv": "ff8015e6314c347b6080258fba9de915902ba9886307c16332b28d434699705b",
+    "consensus_model_vs_reference.json": "a96d31b574170cf5a10733c4810937054c777c1276e30badf0f8f284ee3be122",
+    "binary_runs_vs_reference.json": "8d641bdfae34f12c391e2273c7340c5c08a313dd42b33f6be6b6a3c637739478"
+  },
+  "aggregate_inputs": {
+    "consensus_model_vs_reference.json": "53bcc7843766c69831ada6d9a78be56501c95f1e0edc72696db79c0a97a99cca",
+    "binary_runs_vs_reference.json": "027ebabe9770b8423471f322f3157e7937092a1b6f10fde25a30ab510c33cbbf",
+    "teacher_label_crosstab.csv": "ff8015e6314c347b6080258fba9de915902ba9886307c16332b28d434699705b"
+  }
+}

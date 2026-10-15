@@ -1,0 +1,241 @@
+{
+  "primary_threshold": 3,
+  "humans": {
+    "t3": {
+      "teacher_vs_reference": {
+        "kappa": 0.6846356293674561,
+        "kappa_ci": [
+          0.6193235038508209,
+          0.744399317076024
+        ]
+      }
+    }
+  },
+  "runs": [
+    {
+      "model": "microsoft/phi-4:16k",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6480614366157385,
+        "kappa_ci": [
+          0.581329610010249,
+          0.7125511518574748
+        ]
+      },
+      "teacher": {
+        "kappa": 0.7789207724237501,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6246892080443974,
+        "kappa_ci": [
+          0.5566097123049799,
+          0.6895495002026312
+        ]
+      },
+      "teacher": {
+        "kappa": 0.703374119391917,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "Qwen/Qwen3.6-27B",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6531817774993286,
+        "kappa_ci": [
+          0.5879760003063882,
+          0.7174625607210117
+        ]
+      },
+      "teacher": {
+        "kappa": 0.8213647731332618,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6327984520365881,
+        "kappa_ci": [
+          0.5663219839547026,
+          0.6988299758302778
+        ]
+      },
+      "teacher": {
+        "kappa": 0.7926592553379211,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-32B",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.647627407754691,
+        "kappa_ci": [
+          0.577247002259876,
+          0.7156036164630192
+        ]
+      },
+      "teacher": {
+        "kappa": 0.8120300751879699,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "Qwen/Qwen3.5-27B",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6540055045691843,
+        "kappa_ci": [
+          0.5877773790488712,
+          0.7146878373340986
+        ]
+      },
+      "teacher": {
+        "kappa": 0.805585012371863,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.607859548238445,
+        "kappa_ci": [
+          0.5385345180619224,
+          0.6752229678766153
+        ]
+      },
+      "teacher": {
+        "kappa": 0.7294660280290935,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "openai/gpt-5.6-luna",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6288168129736648,
+        "kappa_ci": [
+          0.5584589582067271,
+          0.6951614753205492
+        ]
+      },
+      "teacher": {
+        "kappa": 0.7982786444324906,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-flash",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6220122017113835,
+        "kappa_ci": [
+          0.5524662426442782,
+          0.686609736267625
+        ]
+      },
+      "teacher": {
+        "kappa": 0.8051718030464046,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "google/gemini-3.5-flash-lite",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6534471451000655,
+        "kappa_ci": [
+          0.5857519383732457,
+          0.714075925455529
+        ]
+      },
+      "teacher": {
+        "kappa": 0.8080699875022318,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "anthropic/claude-haiku-4.5",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.671585030433617,
+        "kappa_ci": [
+          0.6056601004048326,
+          0.7333041895397806
+        ]
+      },
+      "teacher": {
+        "kappa": 0.8215560314061384,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6494234964163289,
+        "kappa_ci": [
+          0.5812622356056092,
+          0.7129307839462259
+        ]
+      },
+      "teacher": {
+        "kappa": 0.793016558675306,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "google/gemini-2.5-flash-lite",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.5772754863138422,
+        "kappa_ci": [
+          0.5070034527156575,
+          0.6429131699616264
+        ]
+      },
+      "teacher": {
+        "kappa": 0.6855345911949685,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "qwen/qwen3.5-397b-a17b",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.6843824490156264,
+        "kappa_ci": [
+          0.6217463862964528,
+          0.7448237847256618
+        ]
+      },
+      "teacher": {
+        "kappa": 0.7876857749469215,
+        "kappa_ci": null
+      }
+    },
+    {
+      "model": "z-ai/glm-4.7-flash",
+      "headline": true,
+      "reference_t3": {
+        "kappa": 0.5918807059035746,
+        "kappa_ci": [
+          0.5188991342674535,
+          0.6607363873426524
+        ]
+      },
+      "teacher": {
+        "kappa": 0.6497844827586207,
+        "kappa_ci": null
+      }
+    }
+  ]
+}

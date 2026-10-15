@@ -1,0 +1,38 @@
+{
+  "clean": true,
+  "problems": [],
+  "notes": [],
+  "width_in": 4.6457,
+  "height_in": 1.6724,
+  "expected_width_in": 4.645670402656704,
+  "width_tolerance_in": 0.02,
+  "font": "Arial",
+  "pdf_fonttype": 42,
+  "scope": {
+    "checked": [
+      "figure width against the declared expected_width (or the default widths when none is declared)",
+      "PDF export font-type rcParam (42), not inspection of the exported fonts",
+      "axes titles",
+      "missing x/y labels on quantitative axes (tick-text heuristic)",
+      "colorbar labels, vertical and horizontal",
+      "text below the 5 pt house floor at the built size",
+      "text overlapping other text",
+      "text running off the canvas"
+    ],
+    "not_checked": [
+      "text, legends or annotations covering data marks (bars, lines, points)",
+      "color or greyscale distinguishability of series",
+      "correctness of data, statistics, intervals or captions",
+      "accessibility, such as alternative text or contrast",
+      "axis-label completeness with custom/mathtext formatters",
+      "actual PDF/PS font embedding (inspect exports separately)",
+      "printed size after LaTeX inclusion if the declared target is wrong",
+      "overall visual quality: open the PDF at 100 %"
+    ]
+  },
+  "stem": "fig08_teacher_label_relation",
+  "files": [
+    "fig08_teacher_label_relation.pdf",
+    "fig08_teacher_label_relation.svg"
+  ]
+}
