@@ -67,7 +67,7 @@ Other studies place humans inside the operational grading process instead of pro
 | Korthals et al. [\[11\]](references.md#ref-Korthals2025Canvas) | Y | U | U | Y | P | N | U | N |
 | Sunkavalli [\[21\]](references.md#ref-Sunkavalli2026JudgesAsRaters) | Y | P | U | Y | N | P | Y | N |
 | Rodrı́guez [\[19\]](references.md#ref-Rodriguez2026LaTA) | N | N | P | P | P | N | U | N |
-| Dadu et al. [\[5\]](references.md#ref-Dadu2025GradeGuard) | Y | Y | P | Y | N | N | Y | P |
+| Dadu et al. [\[5\]](references.md#ref-Dadu2025GradeGuard) | Y | Y | P | Y | N | U | Y | P |
 | ICWE [\[10\]](references.md#ref-Gwozdz2026ICWE) | P | N | N | N | N | N | N | Y |
 | ICALT [\[9\]](references.md#ref-Gwozdz2026ICALT) | P | P | P | N | N | N | U | Y |
 | This article | P | Y | Y | Y | P | Y | P | Y |
