@@ -8,8 +8,8 @@
     "02-source-comparisons.md": "eca0d50bc7a299322a5358104ed1a0f160405ef6c45ed6a08e34a4d60fe2de63",
     "03-design.md": "9adf262bd9eba3751f53e205c23203564b64dce9b2e2f10ae93e9ad77d868e0b",
     "04-methods.md": "1d32e014c0d45a7013211bf8570c67c914856a7c8bb3132a55a5db57452d42cc",
-    "05-teacher-alignment.md": "c591d3be82cf6f57b328ccc6e6e7e6d25d08564c1b73a3406837699ac2cff1db",
-    "06-human-reference.md": "b25e80325f3b23f83a1e7bd0b9463a37e35e0ee3ae015ea4572cc89fa6775c79",
+    "05-teacher-alignment.md": "e52c1f1192fc64d6669e03521381e8d760443bccf6d1bd85e3b5c2532c0fe2ba",
+    "06-human-reference.md": "dbade14e3d6aab24d6dff62dbdaaba14c772bd343631efeb5463ef577a1df5c6",
     "07-provenance.md": "762566f396a872075c96b7ec13fd96c95ed7de2b18a78dd0308ccf5b07acc685",
     "README.md": "a0b7d007c717d4587ad84a8d85c4bf772773b16f2162b127e4aa831c202373a4",
     "figures/LICENSE-openresearch-cli.txt": "c84f7f49136436f347d86e71adb0a6bc132f0b5a3817d84bf572edee71bf33e7",
@@ -85,8 +85,8 @@
     "tables/table-a5.md": "a688c9908b46c21f89b4550ecab0ab4922a9539493a14bcc3ebde6a11767eb18",
     "tables/table-a6.csv": "40a8b76b5a4cad228419bd61778a48918b2bff29bee0673f49266052400510a9",
     "tables/table-a6.md": "ec6e2542ab5c195a01586fb9e946d9199c38e1a55a883d62056d06155c22e0ae",
-    "tables/table-a7.csv": "81a9c3998c403a725883df90cef810f4b33c455bfa60d1b27c9db1ab7bca0e52",
-    "tables/table-a7.md": "b32311b3c7f1bf78c3afa5ed9c77de76375813930bde737307b7f6f61167a98b",
+    "tables/table-a7.csv": "f63f945994b1fa85bb5b1860c4124582f84cb2a9e5f63f7de92f3009a11448fd",
+    "tables/table-a7.md": "dd9d63ebd859bb4eb24f3caaebfceed605b6fdda60767ac46fb7311c8c3d798c",
     "tables/table-a8.csv": "6e2342b4a2c9de1c9157ce778d51bc78406e738197010f6313c9d40383b89ce6",
     "tables/table-a8.md": "0de4a9ceee0bd13d81066293f1b3248981c322b046d6298330539e0df35aec9e",
     "tables/table-a9.csv": "9b012b0ca6c1d8f40f74a372b3c06584137a5a872b3f546d0166af64fa15f4ab",
@@ -94,5 +94,14 @@
   },
   "prepared_package_commit": "354284b8697876b8dbc638c08d68c24e48a35c65",
   "article_reference_revision": "1c3473f53d194dc204e45354b54d2466818fa493",
-  "reference_adjustment": "Article tab:c2 changed from Table 7 to Table 6 on 15 October; mechanical pointer update only."
+  "reference_adjustment": "Article tab:c2 changed from Table 7 to Table 6 on 15 October; mechanical pointer update only.",
+  "article_table_relocation_adjustment": {
+    "date": "2026-10-15",
+    "article_source_revision": "036de3bc57d322e3dda873a3e7dd7078e7e0f769",
+    "appendix_source_revision": "b5d915c338f24be3712f2a21c2f83997b0257c49",
+    "source_table": "tab:alignment (article Table 5 before relocation)",
+    "destination_table": "A.7",
+    "table_adjustment": "Added the five historical ICWE percentages, their replication-gate caption, and highest-value emphasis from the article; retained all existing A.7 values and caveats in both Markdown copies and the CSV.",
+    "reference_adjustment": "After relocation, article tab:c2 changes from Table 6 to Table 5; updated the pointer in 06-human-reference.md."
+  }
 }
