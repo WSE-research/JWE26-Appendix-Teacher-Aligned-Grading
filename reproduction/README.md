@@ -21,7 +21,7 @@ Full reproduction requires an authorized copy of StudentAssessment-Analysis with
 
 In an authorized checkout at the commit named for the corresponding snapshot in `source-manifest.json`, the entry-point docstrings give the original commands and input paths. Restore the snapshot files at their recorded repository-relative paths and run there, with that repository's environment and data access. Do not run these entry points inside the public appendix directory. The teacher-alignment sources use their own frozen input Git revisions; preserve those objects rather than substituting current files.
 
-The source snapshots include optional historical CLI functionality as historical source evidence. No individual rating, adjudication record, advisory-note field or advisory-note sensitivity result is distributed or used by this appendix. The [A.7.3 provenance gaps](../07-provenance.md#a73), including lost P1 repeat-control outputs and the missing original P1 script, remain gaps.
+The source snapshots include optional historical CLI functionality as historical source evidence. No individual rating, adjudication record, advisory-note field or advisory-note sensitivity result is distributed or used by this appendix. The [A.7.3 provenance gaps](../07-provenance.md#a73), including unrecovered P1 repeat-control prediction CSVs and the unrecovered original P1 analysis invocation, remain gaps.
 
 ## Rendering without restricted inputs
 

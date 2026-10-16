@@ -8,7 +8,9 @@
 
 Figure A.2 identifies the textual [prompt templates and output contracts](../prompts/README.md), rather than an additional diagram.
 
-Run `python3 figures/render.py` from the appendix root or invoke the script by absolute path from any working directory. Install [requirements.txt](requirements.txt) beforehand. The script loads only the three aggregate input files, draws existing points/counts/intervals and writes SVG/PDF/PNG and typography/layout audits. It never reads student responses or computes new model metrics or bootstrap intervals. The plot functions retain the previously measured JWE width, 335.7426 TeX pt. See [provenance.json](provenance.json) for the original figure-script and input hashes and the limited derivation.
+Run `python3 figures/render.py --output-dir /tmp/jwe-appendix-figures` from the appendix root or invoke the script by absolute path from any working directory. Install [requirements.txt](requirements.txt) beforehand. The script loads only the three aggregate input files, draws existing points/counts/intervals and writes SVG/PDF/PNG and typography/layout audits into the requested directory outside this repository. The archived figures and their hashes remain unchanged. It never reads student responses or computes new model metrics or bootstrap intervals. The plot functions retain the previously measured JWE width, 335.7426 TeX pt. See [provenance.json](provenance.json) for the original figure-script and input hashes and the limited derivation.
+
+The pinned dependencies were tested with Python 3.14.4. The style helper selects an installed font from its documented fallback list; regenerated files may differ in font metrics or metadata on another system. The command checks the resulting layout, but does not promise byte-identical output.
 
 The shared style helper is included with its [MIT license](LICENSE-openresearch-cli.txt). Figure data and analysis provenance are described in the linked methods/results pages.
 

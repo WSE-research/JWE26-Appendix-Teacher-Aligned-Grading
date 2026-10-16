@@ -1,4 +1,4 @@
-# Table A.5
+# Table A.5: Data availability and missing cases
 
 | Comparison | Collection | Valid and missing cases |
 | --- | --- | --- |
@@ -13,6 +13,6 @@
 | Rationale audit (RQ4 of the article) | 4 runs $`\times`$ 450 rationales | 1 missing (Phi-4); 1,799 judgments per judge |
 | September 2026 OpenRouter acquisition | not used | 1,807 valid, 1,341 unattempted, 2 failed attempts; incomplete |
 
-Data available per comparison. Rows are target rows of the 450-row pool at 40 in-context examples unless stated otherwise; missing or unusable cases remain visible as separate states and are never replaced by values.
+Data available per comparison. Rows are target rows of the 450-row pool at 40 in-context examples unless stated otherwise; missing or unusable cases remain visible as separate states. The binary human-reference comparison includes stored fallback zeros as documented in [A.6.1](../06-human-reference.md#a61).
 
 [CSV](table-a5.csv) · [Context](../05-teacher-alignment.md#table-a5)

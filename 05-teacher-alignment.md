@@ -2,6 +2,8 @@
 
 [Appendix index](README.md)
 
+[A.5.1 Data availability](05-teacher-alignment.md#a51) · [A.5.2 Teacher alignment of the extended model set](05-teacher-alignment.md#a52) · [A.5.3 Teacher feedback volume for the extended model set](05-teacher-alignment.md#a53)
+
 <a id="a51"></a>
 
 ## A.5.1 Data availability
@@ -10,7 +12,7 @@ Table [A.5](05-teacher-alignment.md#table-a5) lists the data on which each comp
 
 <a id="table-a5"></a>
 
-### Table A.5
+### Table A.5: Data availability and missing cases
 
 | Comparison | Collection | Valid and missing cases |
 | --- | --- | --- |
@@ -25,7 +27,7 @@ Table [A.5](05-teacher-alignment.md#table-a5) lists the data on which each comp
 | Rationale audit (RQ4 of the article) | 4 runs $`\times`$ 450 rationales | 1 missing (Phi-4); 1,799 judgments per judge |
 | September 2026 OpenRouter acquisition | not used | 1,807 valid, 1,341 unattempted, 2 failed attempts; incomplete |
 
-Data available per comparison. Rows are target rows of the 450-row pool at 40 in-context examples unless stated otherwise; missing or unusable cases remain visible as separate states and are never replaced by values.
+Data available per comparison. Rows are target rows of the 450-row pool at 40 in-context examples unless stated otherwise; missing or unusable cases remain visible as separate states. The binary human-reference comparison includes stored fallback zeros as documented in [A.6.1](06-human-reference.md#a61).
 
 [Download CSV](tables/table-a5.csv)
 
@@ -41,7 +43,7 @@ The replication gate decides whether the ICWE results and the new results may be
 
 <a id="table-a6"></a>
 
-### Table A.6
+### Table A.6: ICWE replication gate
 
 | Model | ICWE run | Gate run | Diff. (pp) | Within $`\pm 3`$ |
 | --- | --- | --- | --- | --- |
@@ -58,7 +60,7 @@ Replication gate S3: agreement with the teacher label (%) of the five hosted ICW
 
 <a id="table-a7"></a>
 
-### Table A.7
+### Table A.7: Teacher alignment and overruled/confirmed rows
 
 |  | All rows |  | ICWE | Overruled | Confirmed |
 | --- | --- | --- | --- | --- | --- |
@@ -124,7 +126,9 @@ The analysis plan had specified no repeat control for this comparison. Measured 
 
 In the rerun at temperature 0, the locally served model agreed with the teacher label on 84.67% of the rows and the API-served model on 84.00%. The paired difference of $`+0.67`$ percentage points has a 90% bootstrap confidence interval from $`-0.67`$ to $`+2.00`$ points, which lies entirely within the margin, so equivalence is established at this operating point; the arms decided 13 rows differently (8 in line with the teacher label only on premises, 5 only through the API), and McNemar’s exact test gives $`p = 0.581`$. A post hoc cluster bootstrap over the 45 question–fold clusters, which is not part of the prespecified test, leaves both conclusions unchanged, with intervals from $`-0.67`$ to $`+2.00`$ points for the rerun and from $`+0.44`$ to $`+3.33`$ points for the first run. Because the operating point was changed after the first result was known, the equivalence carries less confirmatory weight than a result at the originally fixed operating point would; each run compares the two arms at one temperature, and the two runs are not compared with each other.
 
-Several provenance gaps remain open and are stated here rather than closed by assumption. The script or notebook that produced the recorded P1 values, and its output file, were not found in the analysis repository; the recorded agreement values, paired differences, discordant-pair counts, item-bootstrap intervals, and McNemar results of both P1 runs were reproduced exactly from the pinned prediction files with the bootstrap routine of the repository’s significance script, whereas the repeat-control discordances cannot be recomputed because their raw outputs are lost, and the cluster-bootstrap intervals were added as a post hoc sensitivity analysis. The raw outputs of the four repeat-control runs of the amendment are lost, so the repeat discordances of 12 and 3 rows are quoted from the amendment and cannot be recomputed. The local arm of the first run is the original Mistral base run of 17 August 2026, for which no prompt hash was recorded. Finally, the weight identity of the two arms rests on the design assumption stated above, without routing evidence for the hosted arm.
+The later analysis script `31_jwe_n40_agreement.py` reproduces the agreement values, paired differences, discordant-pair counts, item-bootstrap intervals, and McNemar results of both P1 comparisons from pinned prediction files. It is a reconstruction; the original analysis invocation and its output file have not been recovered. The cluster-bootstrap intervals were added as a post hoc sensitivity analysis.
+
+Historical execution records dated 19 August 2026 preserve the launch commands, comparison code and successful output of the four API repeat controls. Each loaded 450 rows; the two temperature-0.2 controls disagreed on 12 scores and the two temperature-0 controls on 3. Their underlying prediction CSVs have not been recovered, so these counts have not been recomputed from those files. Permanent loss has not been established. The [repeat-control evidence summary](reproduction/p1-repeat-controls.md) distinguishes this historical calculation from the separate P1 reconstruction. The local arm of the first run is the original Mistral base run of 17 August 2026, for which no prompt hash was recorded. Finally, the weight identity of the two arms rests on the design assumption stated above, without routing evidence for the hosted arm.
 
 <a id="a525"></a>
 
@@ -136,7 +140,7 @@ Jev agreed with the teacher label on 399, 401, 408, and 408 of 450 rows at 0, 5,
 
 <a id="table-a8"></a>
 
-### Table A.8
+### Table A.8: Exploratory Jev component substitution
 
 |  | Jev |  | Qwen3.6-27B | API bill |
 | --- | --- | --- | --- | --- |
@@ -178,7 +182,7 @@ The four measured models of the currency tier were run at 0, 5, 20, and 40 examp
 
 <a id="table-a9"></a>
 
-### Table A.9
+### Table A.9: First and sustained feedback-target attainment
 
 |  | First reaches |  |  | Stays from |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -208,7 +212,7 @@ Threshold attainment for the runs with all eleven example counts, all at tempera
 
 <a id="table-a10"></a>
 
-### Table A.10
+### Table A.10: Agreement over the full example-count grid
 
 | Run | 0 | 1 | 3 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

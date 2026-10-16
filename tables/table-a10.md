@@ -1,4 +1,4 @@
-# Table A.10
+# Table A.10: Agreement over the full example-count grid
 
 | Run | 0 | 1 | 3 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

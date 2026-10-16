@@ -2,6 +2,8 @@
 
 [Appendix index](README.md)
 
+[A.2.1 Few-shot grading and comparison inventory](02-source-comparisons.md#a21) · [A.2.2 Rubric conditioning and partial credit](02-source-comparisons.md#a22) · [A.2.3 Human references and instructor involvement](02-source-comparisons.md#a23) · [A.2.4 Reliability, deployment identity and rationales](02-source-comparisons.md#a24) · [A.2.5 Model-backed grading as a web service](02-source-comparisons.md#a25) · [A.2.6 Decision components and selective escalation](02-source-comparisons.md#a26)
+
 <a id="a21"></a>
 
 ## A.2.1 Few-shot grading and comparison inventory
@@ -14,7 +16,7 @@ In that study, instructor-graded responses to the same question reduced the abso
 
 <a id="table-a1"></a>
 
-### Table A.1
+### Table A.1: Source data, references, scales and measures
 
 | Study | Data | Reference labels | Scale | Measures |
 | --- | --- | --- | --- | --- |
@@ -56,7 +58,7 @@ Other studies place humans inside the operational grading process instead of pro
 
 <a id="table-a2"></a>
 
-### Table A.2
+### Table A.2: Study attributes and partial/unknown classifications
 
 | Study | A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |

@@ -1,4 +1,4 @@
-# Table A.11
+# Table A.11: Binary arms against the human reference and teacher label
 
 | Model | Reference $`\geq 3`$ \[95% CI\] | Teacher label | Reference $`\geq 4`$ |
 | --- | --- | --- | --- |

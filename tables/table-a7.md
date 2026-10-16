@@ -1,4 +1,4 @@
-# Table A.7
+# Table A.7: Teacher alignment and overruled/confirmed rows
 
 |  | All rows |  | ICWE | Overruled | Confirmed |
 | --- | --- | --- | --- | --- | --- |

@@ -1,4 +1,4 @@
-# Table A.8
+# Table A.8: Exploratory Jev component substitution
 
 |  | Jev |  | Qwen3.6-27B | API bill |
 | --- | --- | --- | --- | --- |

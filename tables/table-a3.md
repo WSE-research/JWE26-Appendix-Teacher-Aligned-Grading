@@ -1,4 +1,4 @@
-# Table A.3
+# Table A.3: Conditions of the 51 arms and decision component
 
 | Condition (role) | Models | Backend | Temp. | $`n`$ | Date |
 | --- | --- | --- | --- | --- | --- |

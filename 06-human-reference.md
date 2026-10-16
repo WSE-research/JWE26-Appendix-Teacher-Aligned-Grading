@@ -2,9 +2,13 @@
 
 [Appendix index](README.md)
 
+[A.6.1 Partial credit and the independent human reference](06-human-reference.md#a61) · [A.6.2 Score-rationale consistency](06-human-reference.md#a62)
+
 <a id="a61"></a>
 
 ## A.6.1 Partial credit and the independent human reference
+
+<a id="a611"></a>
 
 #### Agreement between the coders before adjudication.
 
@@ -24,6 +28,8 @@ The joint adjudication resolved all 71 disagreements of two or more levels. In 1
 
 [Vector PDF](figures/fig10_model_vs_reference.pdf)
 
+<a id="a612"></a>
+
 #### Partial-credit grades against the reference.
 
 Four models, Phi-4, Mistral Small 3.2, Qwen3.6-27B, and Qwen3.8-27B, graded the pool with the partial-credit prompt, which asks for a level of 0, 1, or 2 in addition to the binary decision (Section 4.4). Figure [A.3](06-human-reference.md#figure-a3) shows their agreement with the three-level reference at 40 in-context examples and temperature 0.2. Against the primary reference, Phi-4 reaches a QWK of 0.558 \[0.504, 0.606\], Mistral Small 3.2 0.537 \[0.478, 0.591\], Qwen3.6-27B 0.518 \[0.474, 0.559\], and Qwen3.8-27B 0.480 \[0.430, 0.528\]. The exact three-level agreement lies between 46.2% (both Qwen models) and 57.6% (Mistral Small 3.2). Agreement is thus moderate for all four models. Phi-4 has the highest and Qwen3.8-27B the lowest point estimate, but the intervals overlap broadly, and since paired differences were not computed, the data do not establish a ranking.
@@ -31,6 +37,8 @@ Four models, Phi-4, Mistral Small 3.2, Qwen3.6-27B, and Qwen3.8-27B, graded the 
 How the 77 boundary texts are resolved changes the values by at most 0.03 relative to the primary reference. The span between the strict and the lenient resolution is at most 0.053 (Qwen3.6-27B) and stays below the width of every interval, which ranges from 0.085 to 0.113. The lenient resolution yields higher QWK for Phi-4 (strict 0.531, lenient 0.581) and Qwen3.6-27B (0.488, 0.541); this difference does not directly describe how frequently either model awards full credit to boundary texts. Exact agreement, which counts matching classes only, does not rise with it: it is 52.2% under the strict and 52.0% under the lenient resolution for Phi-4, and 48.0% and 44.4% for Qwen3.6-27B, because QWK also depends on the marginal distribution of the three classes. Mistral Small 3.2 is almost insensitive to the resolution (0.541 versus 0.535) and would lie marginally ahead of Phi-4 under the strict resolution, whereas Qwen3.8-27B (0.465, 0.491) has the lowest value under every resolution. Excluding the boundary texts, which leaves 364 rows (362 texts), raises all four values to between 0.501 and 0.584. This exclusion, however, also changes the evaluated sample and its class distribution; the increase alone does not establish that boundary texts are harder for the models, and it is no reason to drop them from the primary comparison.
 
 Two observations place these values, but neither supplies a clean ceiling. First, before adjudication, all four models agreed more closely with coder A (QWK between 0.532 and 0.577) than with coder B (between 0.365 and 0.523); the adjudicated reference, and with it the model values, lies between the two coders. Coder A’s codings are also closer to the historical teacher label (Cohen’s kappa 0.749 for coder A and 0.508 for coder B, binarized as correct from level 3), so one plausible but untested explanation is that the in-context examples, which carry the binary teacher label, pull the models toward coder A’s scale. Second, the coders agree with each other at a three-level QWK of 0.623 on the same 450 rows, and all four model point estimates lie below this value. The comparison is not a ceiling comparison, however: the reference combines both codings and therefore lies closer to each coder than the coders lie to each other. Moreover, the comparison with coder agreement depends on the mapping of the raw scale. Under a sensitivity mapping that counts raw level 1 as no credit, coder agreement falls to 0.595 \[0.525, 0.660\] on the 439 texts and to 0.585 on the 450 rows, whereas the four models’ agreement with coder A rises to between 0.588 and 0.671 on the same rows. The declared mapping remains the primary analysis, because switching it after seeing the data would be a forking path, and we report the sensitivity mapping next to it.
+
+<a id="a613"></a>
 
 #### Binary grades against the binarized reference.
 
@@ -40,7 +48,7 @@ The comparison reads each run’s stored binary outcome as it is, including tech
 
 <a id="table-a11"></a>
 
-### Table A.11
+### Table A.11: Binary arms against the human reference and teacher label
 
 | Model | Reference $`\geq 3`$ \[95% CI\] | Teacher label | Reference $`\geq 4`$ |
 | --- | --- | --- | --- |
@@ -86,7 +94,7 @@ Correct from level 4, the teacher label agrees with the reference at only 0.479,
 
 <a id="table-a12"></a>
 
-### Table A.12
+### Table A.12: Paired model-versus-label differences
 
 |  | Reference $`\geq 3`$ |  | Reference $`\geq 4`$ |  |
 | --- | --- | --- | --- | --- |
@@ -126,7 +134,22 @@ Two further values help to read these results. Binarized at level 3, the two ind
 
 RQ4 of the article asks whether the judgment that a grader expresses in its rationale agrees with the score that the same grader records in the same output. The audit uses the rationale condition of the four open-weight graders Qwen3.6-27B, Qwen3.8-27B, Phi-4, and Mistral Small 3.2 at 40 in-context examples and temperature 0.2, with 450 output rows per grader and 1,800 rows in total, containing 1,799 nonempty rationales. Its reference is the recorded score, not a human judgment: the audit measures internal consistency only and says nothing about whether a rationale or a score is correct. We did not compare the rationales with human feedback; lecturer comments were available for only 71 of the 7,491 source rows, including 60 evaluated texts, which is not a reference for the whole pool. Because the rationale condition was added after the analysis plan was fixed, all results in this subsection are exploratory. Four score-blind instruments read the rationales (Section 4.3): the frozen lexicon rule, its sensitivity variant, which resolves rationales that match both cue lists by their last contrastive clause, and two LLM judges, the Gemma judge and the Qwen judge, with an identical frozen prompt. One Phi-4 output contains neither a rationale nor a parseable score; it remains in the denominator as missing input and counts neither as consistent nor as contradictory.
 
-Table 5 of the article reports, for each instrument, the contradictions among the rationales that it could decide and whose recorded score was parseable. The instruments differ first in coverage. The lexicon rule decides between 320 and 370 of the 450 rows per grader (71% to 82%), because it abstains whenever cues from both predefined lists match and leaves rationales without any cue undecided; its sensitivity variant decides between 365 and 421. The Gemma judge decides between 434 and 450 rationales per grader and abstains on 24 rationales in total, while the Qwen judge decides between 393 and 449 and abstains on 105.
+Table [A.14](06-human-reference.md#table-a14) reproduces the article’s score-rationale table and reports, for each instrument, the contradictions among the rationales that it could decide and whose recorded score was parseable. The instruments differ first in coverage. The lexicon rule decides between 320 and 370 of the 450 rows per grader (71% to 82%), because it abstains whenever cues from both predefined lists match and leaves rationales without any cue undecided; its sensitivity variant decides between 365 and 421. The Gemma judge decides between 434 and 450 rationales per grader and abstains on 24 rationales in total, while the Qwen judge decides between 393 and 449 and abstains on 105.
+
+<a id="table-a14"></a>
+
+### Table A.14: Score-rationale contradictions and comparable-case denominators
+
+| Grader | Lexicon rule | Sensitivity variant | Gemma judge | Qwen judge |
+| --- | --- | --- | --- | --- |
+| Mistral Small 3.2 | 0/370 | 39/421 | 3/434 | 2/405 |
+| Phi-4 | 2/339 | 40/407 | 24/441 | 4/393 |
+| Qwen3.6-27B | 0/343 | 14/387 | 0/450 | 0/447 |
+| Qwen3.8-27B | 4/320 | 18/365 | 0/450 | 0/449 |
+
+Exploratory score-rationale audit: contradictions / comparable rationales, where comparable means decided by the instrument with a parseable recorded score. There are 450 input rows per grader (one Phi-4 row without a rationale), 40 in-context examples and temperature 0.2. No human reference is involved. Instrument coverage differs, so these columns do not establish a ranking. Values reproduce the accompanying article’s score-rationale table (`tab:c2`, Table 7 in the 16 October 2026 revision).
+
+[Download CSV](tables/table-a14.csv)
 
 The lexicon rule finds between zero and four contradictions per grader, at most 4 of 320 decided rationales for Qwen3.8-27B. The sensitivity variant finds between 14 and 40 contradictions per grader. The Gemma judge finds no contradiction for the two Qwen graders, 24 among 441 comparable rationales for Phi-4 (5.44%), and 3 among 434 for Mistral Small 3.2 (0.69%); the Qwen judge finds none for the two Qwen graders, 4 among 393 for Phi-4, and 2 among 405 for Mistral Small 3.2.
 

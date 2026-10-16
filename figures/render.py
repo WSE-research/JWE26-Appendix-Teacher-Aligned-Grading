@@ -5,6 +5,11 @@ private report loading removed. No metric estimation, bootstrap or raw data.
 335.7426 TeX pt is the previously measured river-journal text width.
 """
 from pathlib import Path
+import argparse
+import sys
+
+# Preserve the source tree even when importing the local plotting helper.
+sys.dont_write_bytecode = True
 import csv,json
 import matplotlib as mpl
 import numpy as np
@@ -13,6 +18,7 @@ from matplotlib.patches import Patch
 from orx_figstyle import BASELINE,MUTED,PALETTE,SEQUENTIAL,figure,save,texpt_to_inches,use_style
 HERE=Path(__file__).resolve().parent
 DATA=HERE/'data'
+OUTPUT=HERE
 WIDTH=texpt_to_inches(335.7426)
 def _save(fig,stem,**kwargs):
     save(fig,stem,strict=True,**kwargs)
@@ -61,7 +67,7 @@ def fig_teacher_relation():
     ax.grid(axis="x"); ax.grid(axis="y", visible=False)
     fig.legend(handles=[Patch(color=colors[l], label=f"Level {l}") for l in range(5)],
               loc="outside upper center", ncols=5, handlelength=1.0)
-    _save(fig, HERE / "fig08_teacher_label_relation", expected_width=WIDTH)
+    _save(fig, OUTPUT / "fig08_teacher_label_relation", expected_width=WIDTH)
 
 def fig_model_vs_reference():
     doc = json.loads((DATA / "consensus_model_vs_reference.json").read_text(encoding="utf-8"))
@@ -87,7 +93,7 @@ def fig_model_vs_reference():
                Line2D([], [], marker="<", ls="", color=PALETTE["orange"], label="boundary cases to the lower class"),
                Line2D([], [], marker=">", ls="", color=PALETTE["green"], label="boundary cases to the higher class")]
     fig.legend(handles=handles, loc="outside upper center", ncols=1)
-    _save(fig, HERE / "fig10_model_vs_reference", expected_width=WIDTH)
+    _save(fig, OUTPUT / "fig10_model_vs_reference", expected_width=WIDTH)
 
 NICE = {"qwen/qwen3.5-397b-a17b": "Qwen3.5-397B (API)", "anthropic/claude-haiku-4.5": "Claude Haiku 4.5",
         "Qwen/Qwen3.5-27B": "Qwen3.5-27B", "google/gemini-3.5-flash-lite": "Gemini 3.5 Flash-Lite",
@@ -121,9 +127,17 @@ def fig_binary_runs():
                Line2D([], [], marker="s", ls="", color=PALETTE["orange"], label="vs. historical teacher label"),
                Patch(color=MUTED, label="teacher label vs. human reference (95% CI)")]
     fig.legend(handles=handles, loc="outside upper center", ncols=2)
-    _save(fig, HERE / "fig11_binary_runs_vs_reference", expected_width=WIDTH)
+    _save(fig, OUTPUT / "fig11_binary_runs_vs_reference", expected_width=WIDTH)
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output-dir', type=Path, required=True,
+                        help='Directory outside this repository for regenerated figures.')
+    args = parser.parse_args()
+    OUTPUT = args.output_dir.expanduser().resolve()
+    if OUTPUT.is_relative_to(HERE.parent):
+        parser.error('--output-dir must be outside the appendix repository to preserve its inventory')
+    OUTPUT.mkdir(parents=True, exist_ok=True)
     use_style()
     fig_teacher_relation()
     fig_model_vs_reference()
@@ -131,5 +145,5 @@ if __name__ == '__main__':
     # PNG is a browser preview; the PDF and SVG remain vector source assets.
     import pymupdf
     for name in ['fig08_teacher_label_relation','fig10_model_vs_reference','fig11_binary_runs_vs_reference']:
-        doc=pymupdf.open(HERE/(name+'.pdf'))
-        doc[0].get_pixmap(matrix=pymupdf.Matrix(2,2)).save(HERE/(name+'.png'))
+        doc=pymupdf.open(OUTPUT/(name+'.pdf'))
+        doc[0].get_pixmap(matrix=pymupdf.Matrix(2,2)).save(OUTPUT/(name+'.png'))

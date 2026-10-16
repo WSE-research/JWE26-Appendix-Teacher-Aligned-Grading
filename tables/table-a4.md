@@ -1,4 +1,4 @@
-# Table A.4
+# Table A.4: Uncertainty protocol per analysis
 
 | Analysis | Resampling unit | Interval or test |
 | --- | --- | --- |

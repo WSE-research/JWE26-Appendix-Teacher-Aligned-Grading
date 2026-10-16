@@ -1,4 +1,4 @@
-# Table A.12
+# Table A.12: Paired model-versus-label differences
 
 |  | Reference $`\geq 3`$ |  | Reference $`\geq 4`$ |  |
 | --- | --- | --- | --- | --- |

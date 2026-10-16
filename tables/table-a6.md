@@ -1,4 +1,4 @@
-# Table A.6
+# Table A.6: ICWE replication gate
 
 | Model | ICWE run | Gate run | Diff. (pp) | Within $`\pm 3`$ |
 | --- | --- | --- | --- | --- |

@@ -2,6 +2,8 @@
 
 [Appendix index](README.md)
 
+[A.4.1 Inherited components and interfaces](04-methods.md#a41) · [A.4.2 Data, sampling, and grading](04-methods.md#a42) · [A.4.3 Independent human reference](04-methods.md#a43) · [A.4.4 Score-blind rationale instruments](04-methods.md#a44) · [A.4.5 Models, prompts, and deployment conditions](04-methods.md#a45) · [A.4.6 Measurement definitions and analysis protocol](04-methods.md#a46)
+
 <a id="a41"></a>
 
 ## A.4.1 Inherited components and interfaces
@@ -54,7 +56,7 @@ Comparing the binary grading runs with the reference requires a binary version o
 
 ![Figure A.1](figures/fig08_teacher_label_relation.png)
 
-**Figure A.1.** Raw levels of each coder before adjudication among the 450 rows that the teacher label marks as incorrect (198 rows) or correct (252 rows). JG: first author; AB: second author. For both coders, the teacher label corresponds most closely to raw level 3 or higher, which motivates the binary threshold “correct from level 3”.
+**Figure A.1.** Raw levels of each coder before adjudication among the 450 rows that the teacher label marks as incorrect (198 rows) or correct (252 rows). JG: first author; AB: second author. For both coders, the teacher label corresponds most closely to raw level 3 or higher, which is consistent with the prespecified binary threshold “correct from level 3”.
 
 [Vector PDF](figures/fig08_teacher_label_relation.pdf)
 
@@ -112,7 +114,7 @@ The rationale, partial-credit, guided, and deconfounding conditions ran on the f
 
 <a id="table-a3"></a>
 
-### Table A.3
+### Table A.3: Conditions of the 51 arms and decision component
 
 | Condition (role) | Models | Backend | Temp. | $`n`$ | Date |
 | --- | --- | --- | --- | --- | --- |
@@ -154,7 +156,7 @@ All conditions that were run are reported. Inferential claims are restricted to 
 
 *Primary comparison (P1).* P1 asks whether serving a published open-weight model locally instead of through a hosted API changes the agreement with the teacher label, and thus redeems the third limitation of the ICWE study (L3). It compares the two arms of Section 4.4 on parseable rows at $`n=40`$. Equivalence is concluded if the 90% bootstrap confidence interval of the paired difference in agreement (10,000 resamples, seed 42, resampled at the item level) lies entirely within $`[-0.030, +0.030]`$; McNemar’s exact test is reported alongside as a difference test, but the equivalence result is the claim. The analysis plan justifies the margin as wider than the interval half-width of about two percentage points that the 450-row design can resolve and narrower than the 4.67-point gap between Claude Haiku 4.5 (90.67%) and Gemini 2.5 Flash Lite (86.00%) at $`n=40`$, a difference that the ICWE study reported as significant after Holm correction. The plan states the pairing as question, fold, and student; because some students answered a question more than once, this key leaves 24 surplus rows, and the arms are paired on question, fold, student, and answer text, the key that reproduces all recorded P1 values exactly. As a post hoc sensitivity analysis that is not part of the prespecified test, the interval is also computed with a cluster bootstrap over the 45 question–fold clusters, because the ten rows of a cluster share their examples.
 
-*Operating point and repeat discordance.* Repeat discordance, the share of rows on which two runs of the same configuration disagree, serves as the stability baseline of every comparison (R4). The analysis plan originally fixed temperature 0.2 for both P1 arms and specified no repeat control; after the first P1 run, a documented amendment (D10), made with knowledge of its result, added repeat controls of the API arm and moved both arms to temperature 0, and Section 5.1.1 reports both runs. The amendment records 12 of 450 discordant decisions between two API runs at temperature 0.2 and 3 of 450 at temperature 0, whose raw outputs are not preserved; on the local server, two runs of Qwen3.8-27B at temperature 0 disagreed on 2 of 450 rows. Temperature 0 reduces repeat discordance but does not make outputs bit-reproducible, and, following the plan, it is used only for P1 and the runs that measure its operating point. All other grading runs request temperature 0.2 as in the ICWE study; GPT-5.6 Luna discards the requested value and runs on its provider default, and the decision component runs with its service defaults. No value measured at one operating point is averaged, ranked, or differenced against a value measured at the other, and every table with cells at temperature 0 carries a temperature column.
+*Operating point and repeat discordance.* Repeat discordance, the share of rows on which two runs of the same configuration disagree, serves as the stability baseline of every comparison (R4). The analysis plan originally fixed temperature 0.2 for both P1 arms and specified no repeat control; after the first P1 run, a documented amendment (D10), made with knowledge of its result, added repeat controls of the API arm and moved both arms to temperature 0, and Section 5.1.1 reports both runs. The amendment records 12 of 450 discordant decisions between two API runs at temperature 0.2 and 3 of 450 at temperature 0, whose prediction CSVs have not been recovered; preserved execution records document the historical calculation (see [A.5.2.4](05-teacher-alignment.md#a524)); on the local server, two runs of Qwen3.8-27B at temperature 0 disagreed on 2 of 450 rows. Temperature 0 reduces repeat discordance but does not make outputs bit-reproducible, and, following the plan, it is used only for P1 and the runs that measure its operating point. All other grading runs request temperature 0.2 as in the ICWE study; GPT-5.6 Luna discards the requested value and runs on its provider default, and the decision component runs with its service defaults. No value measured at one operating point is averaged, ranked, or differenced against a value measured at the other, and every table with cells at temperature 0 carries a temperature column.
 
 *Prespecified secondary analyses (S1 to S6).* S1 replicates, within each of the four original on-premises models, the comparison of the guided with the base prompt, which an earlier experiment had run under a different protocol (family size four). S2 compares each of the six on-premises base arms with Claude Haiku 4.5 from the gate run as a single declared API reference (family size six). S3 is a replication criterion: the five hosted ICWE models, rerun under the harmonized settings, must reproduce their ICWE agreement at $`n=40`$ (Claude Haiku 4.5 90.67%, DeepSeek V3.2 90.00%, Qwen3.5-397B-A17B 89.33%, Gemini 2.5 Flash Lite 86.00%, GLM-4.7 Flash 81.78%) within three percentage points; otherwise, the ICWE and the new results are not combined, and the drift is reported as a finding. S4, a prespecified calibration comparison between locally served and hosted arms, was not computed for this article. S5 provides descriptive reference lines: the majority class, which always predicts “correct” (56.00%, 252 of 450), and the incumbent-agreement reference, which reproduces the operational auto-grader (90.44%, 407 of 450) and is not an upper bound, because a model that decides overruled rows correctly can exceed it. S6 compares agreement on the 43 rows that the lecturer overruled with the 407 confirmed rows, with a Fisher exact test for the two models new to the study when the plan was fixed and as exploratory for the four original models, from which the hypothesis was generated; a constant “incorrect” decision reaches 81.40% on the overruled rows (35 of 43 carry the label incorrect) and is shown beside them, and the 95% Wilson interval at $`n=43`$ has a half-width of about 13 percentage points at an agreement of 75%. Holm–Bonferroni correction is applied within each sub-family, and the declared family sizes are kept even where arms are missing. For the paired comparisons, the plan prescribes p-values that account for the 45 clusters of ten rows sharing an example set (cluster sign-flip permutation and cluster bootstrap) rather than treating all 450 rows as independent. Of the tests in this family, only S1 has been computed; the tests of S2 and S6 are planned but not computed, and Section 5.1 reports their descriptive inputs and names the missing tests.
 
@@ -174,7 +176,7 @@ In the pre-adjudication three-level comparison against coder A, weighting each 
 
 <a id="table-a4"></a>
 
-### Table A.4
+### Table A.4: Uncertainty protocol per analysis
 
 | Analysis | Resampling unit | Interval or test |
 | --- | --- | --- |

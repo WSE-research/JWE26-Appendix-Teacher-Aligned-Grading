@@ -4,7 +4,24 @@ from pathlib import Path
 from urllib.parse import unquote,urlparse
 import csv,hashlib,json,re,sys
 ROOT=Path(__file__).resolve().parents[1]
+def normalized_cell(value):
+ # Remove display wrappers only; preserve numbers, signs and math commands.
+ value=re.sub(r'\[(.*?)\]\([^)]*\)',r'\1',value)
+ value=value.replace('\\[','[').replace('\\]',']')
+ value=value.replace('$`','').replace('`$','').replace('`','').replace('**','')
+ if value.startswith('*') and value.endswith('*'): value=value[1:-1]
+ return ' '.join(value.split())
+def markdown_table(body):
+ rows=[]
+ for line in body.splitlines():
+  if not line.startswith('|'):continue
+  cells=[c.strip() for c in line.strip().strip('|').split('|')]
+  if all(re.fullmatch(r':?-+:?',c) for c in cells):continue
+  rows.append([normalized_cell(c) for c in cells])
+ return rows
+
 def check():
+ if not __debug__:raise RuntimeError('Validation requires assertions; run Python without -O.')
  manifest=json.loads((ROOT/'provenance.json').read_text())
  for name,digest in manifest['files'].items():
   p=ROOT/name
@@ -32,6 +49,19 @@ def check():
   rows=list(csv.reader(p.open(newline='')))
   assert rows and len(rows)>1,p
   assert len({len(r) for r in rows})==1,p
+  md=p.with_suffix('.md')
+  expected=[[normalized_cell(c) for c in row] for row in rows]
+  assert markdown_table(md.read_text())==expected,f'Table Markdown/CSV mismatch: {p.name}'
+  number=p.stem.split('-a')[1]
+  anchor=f'<a id="table-a{number}"></a>'
+  chapters=[q for q in ROOT.glob('0*.md') if anchor in q.read_text()]
+  assert len(chapters)==1,f'Table context missing or duplicated: {p.name}'
+  section=chapters[0].read_text().split(anchor,1)[1].split('[Download CSV]',1)[0]
+  assert markdown_table(section)==expected,f'Chapter table/CSV mismatch: {p.name}'
+ for source in json.loads((ROOT/'reproduction/source-manifest.json').read_text()):
+  assert manifest['files'][source['file']]==source['sha256'],f'Source pin mismatch: {source["file"]}'
+ for name,digest in json.loads((ROOT/'figures/provenance.json').read_text())['aggregate_inputs'].items():
+  assert manifest['files']['figures/data/'+name]==digest,f'Aggregate source pin mismatch: {name}'
  schema=json.loads((ROOT/'prompts/judge-schema.json').read_text())
  assert schema['required']==['label','evidence'] and schema['additionalProperties'] is False
  assert schema['properties']['label']['enum']==['supports_correct','supports_incorrect','undetermined']

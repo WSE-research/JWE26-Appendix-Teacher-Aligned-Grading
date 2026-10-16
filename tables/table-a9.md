@@ -1,4 +1,4 @@
-# Table A.9
+# Table A.9: First and sustained feedback-target attainment
 
 |  | First reaches |  |  | Stays from |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |

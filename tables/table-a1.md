@@ -1,4 +1,4 @@
-# Table A.1
+# Table A.1: Source data, references, scales and measures
 
 | Study | Data | Reference labels | Scale | Measures |
 | --- | --- | --- | --- | --- |
