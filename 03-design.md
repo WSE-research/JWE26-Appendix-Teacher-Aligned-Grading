@@ -36,3 +36,27 @@ Each of the following six requirements answers at least one of these limitations
 The following detail concerns output-contract change (b) among the four extensions in Section 3.3 of the article.
 
 *(b) Output contract.* The second change extends the output of the grading service. In the rationale condition, the model returns a short rationale in a field `reason` next to `correct` and `confidence`; in the partial-credit condition, it returns an integer `level` from 0 to 2 next to `correct` and `confidence`. Unlike changes (a) and (c), this change does not pass the adapter boundary unnoticed: the output validation, the review display, and the analysis have to handle the new field, and the field can be lost silently where they do not. In this study, the evaluation pipeline at first extracted only `correct` and `confidence` from the raw responses, and its binary coercion would have turned every level-2 grade into a missing value had the partial-credit level been read through it. An extended output also needs evidence on its own terms: a partial-credit level needs a reference on its scale (R1, R2), and a rationale needs an instrument that reads it without the score (R5). The in-context examples stay binary in both conditions, and the partial-credit prompt states the level definitions without an expert rubric, so the extended output is not adapted to the teacher in the way the binary decision is. This change addresses L1 for the partial-credit level and, under the reading of L4 in [A.3.1](03-design.md#a31), the extension of the output by a rationale; it is examined in RQ3 of the article and RQ4 of the article.
+
+<a id="a33"></a>
+
+## A.3.3 Evaluation roadmap and full design
+
+The article gives a compact roadmap; the full comparison-level plan is retained here. Configuration details are in [A.4.5](04-methods.md#a45), statistical status and amendments in [A.4.6](04-methods.md#a46).
+
+<a id="table-a15"></a>
+
+### Table A.15: Detailed evaluation design
+
+| RQ | Change examined | Reference | Comparison construct and unit | Status |
+| --- | --- | --- | --- | --- |
+| RQ1 | Extended model set and prompt variants: ICWE models (rerun), open-weight and current hosted models | Teacher label | Agreement; parseable outputs per arm | S3 replication criterion; S1 (replication), S2, S4, S6 secondary; S5 descriptive; rest exploratory |
+| RQ1 | Serving path for the same declared open-weight model: vLLM inference server versus hosted API (hosted weight identity unverified) | Teacher label | Paired difference in agreement, read against repeat discordance | P1, primary (equivalence) |
+| RQ1 | Decision component (Jev) behind the adapter; offline referral | Teacher label | Agreement; coverage and agreement of accepted decisions | Exploratory |
+| RQ2 | Number of teacher-rated examples for the new models | Teacher label | Agreement per example count; threshold attainment | Exploratory |
+| RQ3 | Output scale: partial-credit level | Independent model-blind reference; teacher label for contrast | Partial-credit agreement (QWK); rows, inter-rater agreement over distinct texts | Exploratory |
+| RQ3 | Binary decisions of the base arms | Human reference binarized from its five-level scale (A.4.3); teacher label for contrast | Binary agreement with the reference (Cohen's $\kappa$); rows | Post hoc exploratory |
+| RQ4 | Output extension: rationale | Grader's own recorded score | Score–rationale contradictions and coverage per score-blind instrument | Exploratory |
+
+Detailed evaluation design retained from article 8caf0b9 (20 October 2026). P1 is the primary analysis; S1–S6 are the secondary analyses, including replication and descriptive roles. Agreement means agreement with the teacher label; QWK means quadratic weighted kappa. Statistical roles do not imply that all analyses were computed: S4 remains uncomputed; S2/S6 were computed late, with qualifications in [A.4.6](04-methods.md#a46).
+
+[Download CSV](tables/table-a15.csv) · [Standalone table](tables/table-a15.md)

@@ -1,18 +1,18 @@
 {
   "article_baseline": "ab1d8600ccf7e91e5024643f907458de2477f47e",
   "curated_content_baseline": "c0bf261b19f058ede57bad9f98b4253e4da4d918",
-  "accessed": "2026-10-16",
+  "accessed": "2026-10-20",
   "files": {
     ".gitignore": "d1c3d6d9d82d4fe7020db6d737bf2b0a2267c40b9c2866a18045ca58be8d7c79",
     "01-predecessors.md": "850fc9a56b33a1ccb1c44a32d064c9ddd29caa032e0a11f8e06045c94d510df8",
     "02-source-comparisons.md": "d0d31a2a74fe4ff4ee577363b64f5b6846e63d2ce4407c1ce9da74b0fb11917b",
-    "03-design.md": "9bc0cc89a02ed10faa1ff6d56c7d1e73a61a6720e363ee1e11fa7d9513d3f4c6",
+    "03-design.md": "85136918c94ecb0b6b2844f87564efb562af4b8e0e423f9d228c44bd34beabac",
     "04-methods.md": "a32217362cdb978dabc02c8bc769484c9c8bcfc97915f18ebf5feb7fcdf80c2f",
     "05-teacher-alignment.md": "e478d08dffc92fa2a140dde69940773bc19727059a14982f39b73e0d581c29d7",
     "06-human-reference.md": "1bad2d40c824dda094b173cb0fb7caeb8f745b577aaf58aa15ecd74d9a19c7a0",
     "07-provenance.md": "83755493e81175138635a5fcd65e7fcf5b0f84ffeabe604832a0e80fbd34f6d2",
     "DATA_DICTIONARY.md": "4917a0e6bfd5e8ed7fd049e1c8394d64ff0a9dc21c9e5663682ce316b52eeb61",
-    "README.md": "c4b2d367575a3c36a0e9e6aee1ed4e34fbe39e80000c1f4b8b649265d4d25753",
+    "README.md": "06e97d45c70768f0568de9f2452039b65e207ed0ad13a0e9abdb0a76702c62e1",
     "REVIEWER_GUIDE.md": "d5edd58c2c2c325705e8a619db9593c96cddef5dd1803f261c1a534a4f90bd27",
     "figures/LICENSE-openresearch-cli.txt": "c84f7f49136436f347d86e71adb0a6bc132f0b5a3817d84bf572edee71bf33e7",
     "figures/README.md": "fa18e634dc1522c6e8c227a41e393ab4c6392ac712309e69da253bf6a583d94e",
@@ -68,7 +68,7 @@
     "scripts/README.md": "e28611f70780ec78bb4c0531aa2101c6dacfcff58c63af0cce90f456988b5026",
     "scripts/check_aggregates.py": "754df2f11eb4d423ebf89783852ddd7d4aa09a7c88a94234e4429df0de4f5495",
     "scripts/validate.py": "84e8e37166829b5e38e9e2a413a11eccdd4ef474a4192ad3f2c70ecf6362f433",
-    "tables/README.md": "6f8bc401e7229bae81a1aee83b3fa2b5900741c1d2ab46f444b9dad31107bffc",
+    "tables/README.md": "118859b38a20d7573618c365116bbe166f5ba5da6eebdfc1a0231314783cac05",
     "tables/table-a1.csv": "7e251d8c3a105d7e3ddd38eca62550007d1f3fa887284a242326db75510c03e2",
     "tables/table-a1.md": "e96b5da47dfacbe54c3a46b560774a69394af504e2f9b254ba1c582c68035b5d",
     "tables/table-a10.csv": "31059686e590eb347309a8e127aa6e2b03faff73788b20316ef6f069d02f6604",
@@ -81,6 +81,8 @@
     "tables/table-a13.md": "c7a70ab6ee34c34b9b593b3ac7b9fd043ebd540fea399d97f2c424842044cd01",
     "tables/table-a14.csv": "86d7ebb711747a7b7aef09267b28bded50d7668227f9c02737ea082275aeb8c5",
     "tables/table-a14.md": "b8baa134b6af29f25828290eb030f841f7b2ffc937e62989e3092e16fb2ab2bc",
+    "tables/table-a15.csv": "acacfc390f3cc7e16ce0ef5b3e2ea9b7e758078c955c9e209d33913fc8acd234",
+    "tables/table-a15.md": "4877e9ca01abfeb762dc5a29533451b5dfff34f1450ae7906065e1d27af87051",
     "tables/table-a2.csv": "66bb3371ec50642e6e5269a5252f367b6f1de5125a7207bebc13d9d583030ccd",
     "tables/table-a2.md": "19e60e4229aeb0d85b5a3ee455197c849217be41afa698ca9461d8274fe9b937",
     "tables/table-a3.csv": "354e2e9e8986d16265e255821503c6de1e923e3ec507c7013bdcd2132a662317",
@@ -121,5 +123,6 @@
       "Added selected aggregate checks, table-copy checks and non-destructive figure output."
     ],
     "unchanged": "Existing quantitative result cells, aggregate figure inputs, prompt templates and historical Python source snapshots."
-  }
+  },
+  "article_revision_reviewed": "8caf0b9aeff2accd9ca4ab976caf898c1627ecae"
 }

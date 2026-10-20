@@ -18,5 +18,6 @@ Each table has a readable Markdown version and a CSV with the same cell values. 
 | A.12 | Paired model-versus-label differences | [Read](table-a12.md) · [CSV](table-a12.csv) |
 | A.13 | Requirements and provenance coverage | [Read](table-a13.md) · [CSV](table-a13.csv) |
 | A.14 | Score-rationale contradictions and comparable-case denominators | [Read](table-a14.md) · [CSV](table-a14.csv) |
+| A.15 | Detailed evaluation design | [Read](table-a15.md) · [CSV](table-a15.csv) |
 
 [Appendix index](../README.md)

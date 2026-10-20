@@ -26,6 +26,7 @@ The A numbers identify repository sections. Each linked section has a stable exp
 | A.1 | [Predecessor results](01-predecessors.md) | ICWE protocol and ceiling-scoped results; related ICALT audit |
 | A.2 | [Source and comparison details](02-source-comparisons.md) | Study-level evidence, comparison tables and inspected source versions |
 | A.3 | [Additional design details](03-design.md) | Requirement rationale and output-contract validation |
+| A.3.3 | [Detailed evaluation design](03-design.md#a33) | Full comparison-level plan behind the compact RQ roadmap |
 | A.4.3 | [Independent human reference](04-methods.md#a43) | Coding scale, E5 adjudication, residual dissent and reference thresholds |
 | A.4.4 | [Rationale instruments](04-methods.md#a44) | Score-blind instruments, judge configuration and diagnostics |
 | A.4.5 | [Models, prompts and conditions](04-methods.md#a45) | All 51 arms, model identifiers, exact prompts and output contracts |
@@ -43,7 +44,7 @@ The A numbers identify repository sections. Each linked section has a stable exp
 | Path | What to use it for |
 |---|---|
 | `01-*.md` through `07-*.md` | Read the supplementary material directly |
-| [tables/](tables/README.md) | Browse 14 tables or download their CSV representations |
+| [tables/](tables/README.md) | Browse 15 tables or download their CSV representations |
 | [figures/](figures/README.md) | Three diagrams as SVG, PDF and browser previews, aggregate inputs and rendering script |
 | [prompts/](prompts/README.md) | Seven exact grading templates, shared rationale-judge prompt and enforced judge schema |
 | [reproduction/](reproduction/README.md) | Pinned historical analysis/measurement source files and requirements for restricted-input reproduction |
