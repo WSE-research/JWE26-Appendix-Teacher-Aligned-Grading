@@ -57,6 +57,6 @@ The article gives a compact roadmap; the full comparison-level plan is retained 
 | RQ3 | Binary decisions of the base arms | Human reference binarized from its five-level scale (A.4.3); teacher label for contrast | Binary agreement with the reference (Cohen's $\kappa$); rows | Post hoc exploratory |
 | RQ4 | Output extension: rationale | Grader's own recorded score | Score–rationale contradictions and coverage per score-blind instrument | Exploratory |
 
-Detailed evaluation design retained from article 8caf0b9 (20 October 2026). P1 is the primary analysis; S1–S6 are the secondary analyses, including replication and descriptive roles. Agreement means agreement with the teacher label; QWK means quadratic weighted kappa. Statistical roles do not imply that all analyses were computed: S4 remains uncomputed; S2/S6 were computed late, with qualifications in [A.4.6](04-methods.md#a46).
+Detailed evaluation design retained from article 8caf0b9. P1 is the primary analysis; S1–S6 are the secondary analyses, including replication and descriptive roles. Agreement means agreement with the teacher label; QWK means quadratic weighted kappa. Statistical roles do not imply that all analyses were computed: S4 remains uncomputed; S2/S6 were computed late, with qualifications in [A.4.6](04-methods.md#a46).
 
 [Download CSV](tables/table-a15.csv) · [Standalone table](tables/table-a15.md)

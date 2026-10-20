@@ -11,7 +11,7 @@
 | Partial credit, models (RQ3 of the article) | 4 runs $`\times`$ 450 rows | all 1,800 outputs parseable |
 | Partial credit, humans (RQ3 of the article) | 2 coders $`\times`$ 439 unique texts | 439 of 439 per coder; 71 distances $`\geq 2`$ adjudicated; 152 distance-1 cases residual dissent |
 | Rationale audit (RQ4 of the article) | 4 runs $`\times`$ 450 rationales | 1 missing (Phi-4); 1,799 judgments per judge |
-| September 2026 OpenRouter acquisition | not used | 1,807 valid, 1,341 unattempted, 2 failed attempts; incomplete |
+| Supplementary OpenRouter acquisition | not used | 1,807 valid, 1,341 unattempted, 2 failed attempts; incomplete |
 
 Data available per comparison. Rows are target rows of the 450-row pool at 40 in-context examples unless stated otherwise; missing or unusable cases remain visible as separate states. The binary human-reference comparison includes stored fallback zeros as documented in [A.6.1](../06-human-reference.md#a61).
 

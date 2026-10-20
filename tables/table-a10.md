@@ -17,6 +17,6 @@
 | Mistral 3.2, rerun | 86.00 | 80.89 | 79.78 | 81.56 | 82.00 | 84.44 | 86.22 | 86.44 | 84.44 | 84.44 | 84.22 |
 | Mistral 3.2, API | 85.11 | 81.56 | 79.33 | 82.00 | 80.89 | 83.11 | 84.22 | 85.11 | 83.78 | 83.56 | 83.78 |
 
-Agreement with the teacher label (%) by number of in-context examples $`n`$ for the runs of Table [A.9](../05-teacher-alignment.md#table-a9), all at temperature 0.2, each cell on 450 parseable rows. ICWE: run of 18 February 2026 through OpenRouter under the ICWE settings (Haiku 4.5: Claude Haiku 4.5; Gemini 2.5 FL: Gemini 2.5 Flash-Lite); on-prem.: original base runs of 17 August 2026; rerun: reproducibility reruns of 19 August 2026; API: first P1 API arm. Reference lines (S5) at every $`n`$: majority class 56.00%, incumbent-agreement reference 90.44%.
+Agreement with the teacher label (%) by number of in-context examples $`n`$ for the runs of Table [A.9](../05-teacher-alignment.md#table-a9), all at temperature 0.2, each cell on 450 parseable rows. ICWE: run from the predecessor evaluation through OpenRouter under the ICWE settings (Haiku 4.5: Claude Haiku 4.5; Gemini 2.5 FL: Gemini 2.5 Flash-Lite); on-prem.: original base runs from the original evaluation; rerun: reproducibility reruns from the reproducibility check; API: first P1 API arm. Reference lines (S5) at every $`n`$: majority class 56.00%, incumbent-agreement reference 90.44%.
 
 [CSV](table-a10.csv) · [Context](../05-teacher-alignment.md#table-a10)

@@ -21,7 +21,7 @@ The study contains **450 response records for nine questions, representing 439 d
 
 ## Find material cited by the article
 
-The A numbers identify repository sections. Each linked section has a stable explicit anchor. Unprefixed section/table/figure numbers refer to the accompanying article, using the 20 October 2026 manuscript revision recorded in [provenance.json](provenance.json).
+The A numbers identify repository sections. Each linked section has a stable explicit anchor. Unprefixed section/table/figure numbers refer to the accompanying article, using the manuscript revision recorded in [provenance.json](provenance.json).
 
 | Article destination | Repository entry | Contents |
 |---|---|---|

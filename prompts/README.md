@@ -33,6 +33,6 @@ Target student answer:
 
 Repeat the example block for each sampled example. At zero examples use `No human-rated examples provided (baseline round).` in place of the entire example block. Runtime question/answer slots are German course content, while the prompt templates are English. The examples keep binary labels even for the partial-credit condition.
 
-Source: grading configuration files at StudentAssessment-Analysis `225061256f988e54fcec8fa9d2d6cb8647b796d8`; shared judge prompt/schema at `3dcd7fbab3d1b69a4f79fa4b87d783cd2f8f64c0`. Accessed 15 October 2026. See [A.4.5](../04-methods.md#a45) for conditions and [A.4.4](../04-methods.md#a44) for judge settings.
+Source: grading configuration files at StudentAssessment-Analysis `225061256f988e54fcec8fa9d2d6cb8647b796d8`; shared judge prompt/schema at `3dcd7fbab3d1b69a4f79fa4b87d783cd2f8f64c0`. See [A.4.5](../04-methods.md#a45) for conditions and [A.4.4](../04-methods.md#a44) for judge settings.
 
 [Appendix index](../README.md)

@@ -1,6 +1,6 @@
 # Historical analysis source snapshots
 
-These are versioned source files used for the article's measurements, separate from the data-free figure renderer. They are preserved at their original paths within three source snapshots. [source-manifest.json](source-manifest.json) pins every source commit/path/hash. Fifteen files were copied without changes on 15 October 2026. In the remaining file, 21_label_partial_credit.py, one docstring sentence quoting a student answer was replaced with a generic duplicate-answer description; executable code is unchanged. The manifest records both original and distributed hashes.
+These are versioned source files used for the article's measurements, separate from the data-free figure renderer. They are preserved at their original paths within three source snapshots. [source-manifest.json](source-manifest.json) pins every source commit/path/hash. Fifteen files were copied without changes in the initial extraction. In the remaining file, 21_label_partial_credit.py, one docstring sentence quoting a student answer was replaced with a generic duplicate-answer description; executable code is unchanged. The manifest records both original and distributed hashes.
 
 | Snapshot | Entry point | Role |
 |---|---|---|
@@ -29,6 +29,6 @@ Use [figures/render.py](../figures/render.py) and the included aggregate data to
 
 [Appendix index](../README.md)
 
-## Secondary tests synchronized on 20 October 2026
+## Late-computed secondary tests
 
 [Late S2/S6 outputs and provenance](secondary-tests/README.md) preserve both S2 test conventions and the S6 sensitivity. The new source snapshot is pinned separately in the manifest; existing source snapshots retain their historical pins.
