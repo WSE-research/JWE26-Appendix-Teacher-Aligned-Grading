@@ -28,3 +28,7 @@ The source snapshots include optional historical CLI functionality as historical
 Use [figures/render.py](../figures/render.py) and the included aggregate data to redraw the three diagrams. This does not invoke any source snapshot or perform a bootstrap. The repository [validator](../scripts/validate.py) also requires no restricted inputs.
 
 [Appendix index](../README.md)
+
+## Secondary tests synchronized on 20 October 2026
+
+[Late S2/S6 outputs and provenance](secondary-tests/README.md) preserve both S2 test conventions and the S6 sensitivity. The new source snapshot is pinned separately in the manifest; existing source snapshots retain their historical pins.

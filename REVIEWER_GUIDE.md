@@ -43,7 +43,7 @@ Teacher-alignment percentages use parseable outputs. The binary human-reference 
 | Do the models agree with the new human reference? | [Figure A.3](06-human-reference.md#figure-a3), [binary comparison](06-human-reference.md#a613) | Partial-credit QWK and binary Cohen's kappa are different measures. Threshold and residual-dissent policy matter. |
 | Is a model better than the historical label against that reference? | [Table A.12](06-human-reference.md#table-a12) | Paired differences use shared resamples. Overlapping marginal intervals, or a difference interval containing zero, do not establish equivalence. |
 | Are rationales consistent with their scores? | [Table A.14](06-human-reference.md#table-a14) and [A.6.2](06-human-reference.md#a62) | Contradictions need their comparable-case denominator. Instruments cover different subsets; none was validated against human rationale judgments. |
-| Which claims are exploratory or incomplete? | [Analysis protocol](04-methods.md#a46), [provenance](07-provenance.md#a73) | Descriptive results do not substitute for the planned but uncomputed S2, S4 and S6 analyses. |
+| Which claims are exploratory or incomplete? | [Analysis protocol](04-methods.md#a46), [provenance](07-provenance.md#a73) | S2/S6 were computed late; S2 depends on the test convention and S6 is not error detection. S4 remains uncomputed because confidence has no defined event. |
 
 ## What can be checked from this repository?
 

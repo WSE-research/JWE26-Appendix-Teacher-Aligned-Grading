@@ -1,0 +1,12 @@
+{
+  "script": "experiments/scripts/33_jwe_s2_s6_tests.py",
+  "computed_utc": "2026-10-20T12:48:15.510469+00:00",
+  "selection_ref": "46fb4e6b4d9f667e458107f642aba54b50c51d92",
+  "n_perm": 200000,
+  "seed": 42,
+  "status": "prespecified secondary tests, computed late on 2026-10-20 after the descriptive per-arm values had been reported (2026-10-13); arms, K and test definitions fixed before any S2/S6 data existed; applying the D7 cluster-robust convention to S2 recorded on 2026-10-20 (D21), exact McNemar reported alongside",
+  "s1_routine_validation_max_abs_dev": 0.0012268693656531937,
+  "not_computed": [
+    "S4 calibration sign: confidence has no defined event in the prompt"
+  ]
+}

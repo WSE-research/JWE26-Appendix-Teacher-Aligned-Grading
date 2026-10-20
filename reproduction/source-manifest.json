@@ -112,5 +112,40 @@
     "commit": "3dcd7fbab3d1b69a4f79fa4b87d783cd2f8f64c0",
     "path": "experiments/judge_20260918/frozen_lexicon.py",
     "sha256": "067d0f363e4ea2d0dcaa6b1ffd60338b67a8ea52151961cc954f578d0f1ff461"
+  },
+  {
+    "file": "reproduction/secondary-tests/meta.json",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "d1cfc59c4c99b7890a7b46c884ca45a5c43d36b7",
+    "path": "experiments/outputs/jwe_rq1_rq2_evidence/2026-10-20/s2_s6/meta.json",
+    "sha256": "cdbbff02a0c0b32750860a1a15831bee17e43b00808fbd5e1266b54220d0aba5"
+  },
+  {
+    "file": "reproduction/secondary-tests/s2_onprem_vs_claude_haiku.csv",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "d1cfc59c4c99b7890a7b46c884ca45a5c43d36b7",
+    "path": "experiments/outputs/jwe_rq1_rq2_evidence/2026-10-20/s2_s6/s2_onprem_vs_claude_haiku.csv",
+    "sha256": "24461eb342ff7b3cedc4ea2a195d8c6e38d4906a76af9795b4a054c018123add"
+  },
+  {
+    "file": "reproduction/secondary-tests/s6_new_models_fisher.csv",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "d1cfc59c4c99b7890a7b46c884ca45a5c43d36b7",
+    "path": "experiments/outputs/jwe_rq1_rq2_evidence/2026-10-20/s2_s6/s6_new_models_fisher.csv",
+    "sha256": "7d1975423da69ee9fe6da03efecb00f9f8603eba1f5b12a37edfc1d20b6c31d0"
+  },
+  {
+    "file": "reproduction/secondary-tests/independent_check/verify_out.json",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "d1cfc59c4c99b7890a7b46c884ca45a5c43d36b7",
+    "path": "experiments/outputs/jwe_rq1_rq2_evidence/2026-10-20/s2_s6/independent_check/verify_out.json",
+    "sha256": "bcd71b56477ae742ac6e00ad397502d03e623a8557249bbc4a6db222beb9c00d"
+  },
+  {
+    "file": "reproduction/teacher-alignment/experiments/scripts/33_jwe_s2_s6_tests.py",
+    "repository": "StudentAssessment-Analysis",
+    "commit": "d1cfc59c4c99b7890a7b46c884ca45a5c43d36b7",
+    "path": "experiments/scripts/33_jwe_s2_s6_tests.py",
+    "sha256": "0a8135cf1595e984e1f17bbad27e3d7361d2803a7c8c8ef275be2e1eacb679a7"
   }
 ]

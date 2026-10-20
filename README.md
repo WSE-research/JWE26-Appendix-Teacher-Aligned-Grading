@@ -2,6 +2,8 @@
 
 Supplementary methods, comparison details, aggregate results, figures, prompts and reproduction code for the accompanying Journal of Web Engineering article by Jonas Gwozdz and Andreas Both.
 
+Current synchronization: compact article roadmap and run groups, full design in A.3.3, and late S2/S6 results in A.4.6/A.5.2. See [provenance](provenance.json).
+
 ## Start here
 
 - **Understand the study:** the [reviewer guide](REVIEWER_GUIDE.md) explains the two grading references, the scales, and which material supports each research question.
@@ -19,7 +21,7 @@ The study contains **450 response records for nine questions, representing 439 d
 
 ## Find material cited by the article
 
-The A numbers identify repository sections. Each linked section has a stable explicit anchor. Unprefixed section/table/figure numbers refer to the accompanying article, using the 16 October 2026 manuscript revision recorded in [provenance.json](provenance.json).
+The A numbers identify repository sections. Each linked section has a stable explicit anchor. Unprefixed section/table/figure numbers refer to the accompanying article, using the 20 October 2026 manuscript revision recorded in [provenance.json](provenance.json).
 
 | Article destination | Repository entry | Contents |
 |---|---|---|
