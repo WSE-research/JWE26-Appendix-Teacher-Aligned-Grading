@@ -17,7 +17,7 @@ The remaining files are the original local dependencies, not additional analyses
 
 ## Restricted-input reproduction
 
-Full reproduction requires an authorized copy of StudentAssessment-Analysis with the original Git objects, pinned predictions, source pool, human reference and archived agreement records. Those inputs are not distributed here. The code snapshots alone are not a runnable replacement for the restricted analysis repository: some original modules load its analysis plan at import time or read pinned Git blobs.
+Full reproduction requires an authorized copy of StudentAssessment-Analysis with the original Git objects, pinned predictions, source pool, human reference and archived agreement records. Those inputs are not distributed here; the source pool itself is public in the [ICWE 2026 appendix](https://github.com/WSE-research/ICWE26-Appendix-Reliable-LLM-Integrated-Web-Architectures-for-Teacher-Aligned-Grading), while the human reference, adjudication records and pinned predictions remain restricted. The code snapshots alone are not a runnable replacement for the restricted analysis repository: some original modules load its analysis plan at import time or read pinned Git blobs.
 
 In an authorized checkout at the commit named for the corresponding snapshot in `source-manifest.json`, the entry-point docstrings give the original commands and input paths. Restore the snapshot files at their recorded repository-relative paths and run there, with that repository's environment and data access. Do not run these entry points inside the public appendix directory. The teacher-alignment sources use their own frozen input Git revisions; preserve those objects rather than substituting current files.
 
