@@ -21,7 +21,7 @@ The study contains **450 response records for nine questions, representing 439 d
 
 ## Find material cited by the article
 
-The A numbers identify repository sections. Each linked section has a stable explicit anchor. Unprefixed section/table/figure numbers refer to the accompanying article, using the manuscript revision recorded in [provenance.json](provenance.json).
+The A numbers identify repository sections. Each linked section has a stable explicit anchor. Unprefixed section/table/figure numbers refer to the accompanying article, using the manuscript state recorded under `revision_structure_sync` in [provenance.json](provenance.json).
 
 | Article destination | Repository entry | Contents |
 |---|---|---|
@@ -29,12 +29,13 @@ The A numbers identify repository sections. Each linked section has a stable exp
 | A.2 | [Source and comparison details](02-source-comparisons.md) | Study-level evidence, comparison tables and inspected source versions |
 | A.3 | [Additional design details](03-design.md) | Requirement rationale and output-contract validation |
 | A.3.3 | [Detailed evaluation design](03-design.md#a33) | Analysis-plan identifiers (P1, S1–S6) and the full comparison-level plan behind the compact RQ roadmap |
+| A.4.2 | [Data, sampling and grading](04-methods.md#a42) | Response pool, duplicate texts and overlap between targets and examples |
 | A.4.3 | [Independent human reference](04-methods.md#a43) | Coding scale, E5 adjudication, residual dissent and reference thresholds |
 | A.4.4 | [Rationale instruments](04-methods.md#a44) | Score-blind instruments, judge configuration and diagnostics |
-| A.5.2 | [Teacher alignment](05-teacher-alignment.md#a52) | Agreement of all runs; secondary analyses S1, S2 and S6 |
 | A.4.5 | [Models, prompts and conditions](04-methods.md#a45) | All 51 arms, model identifiers, exact prompts and output contracts |
 | A.4.6 | [Measurement and uncertainty](04-methods.md#a46) | Units, bootstrap protocols, missing outcomes and statistical status |
 | A.5.1 | [Data availability](05-teacher-alignment.md#a51) | Available and missing cases by comparison |
+| A.5.2 | [Teacher alignment](05-teacher-alignment.md#a52) | Agreement with the teacher label at 40 examples; secondary analyses S1, S2 and S6 |
 | A.5.2.1 | [Replication gate](05-teacher-alignment.md#a521) | ICWE/gate differences and settings caveats |
 | A.5.2.4 | [Serving substitution](05-teacher-alignment.md#a524) | Both P1 runs and provenance limitations |
 | A.5.2.5 | [Component substitution](05-teacher-alignment.md#a525) | Jev, held-out routing and offline cascade |

@@ -7,6 +7,6 @@
 | Qwen3.6-27B | 0/343 | 14/387 | 0/450 | 0/447 |
 | Qwen3.8-27B | 4/320 | 18/365 | 0/450 | 0/449 |
 
-Exploratory score-rationale audit: contradictions / comparable rationales, where comparable means decided by the instrument with a parseable recorded score. There are 450 input rows per grader (one Phi-4 row without a rationale), 40 in-context examples and temperature 0.2. No human reference is involved. Instrument coverage differs, so these columns do not establish a ranking. The accompanying article reports only the range of these counts, 0 to 40 contradictions per grader, at the end of Section 5.3; before its revision, it contained this table (`tab:c2`).
+Exploratory score-rationale audit: contradictions / comparable rationales, where comparable means decided by the instrument with a parseable recorded score. There are 450 input rows per grader (one Phi-4 row without a rationale), 40 in-context examples and temperature 0.2. No human reference is involved. Instrument coverage differs, so these columns do not establish a ranking. The accompanying article reports only the range of these counts, 0 to 40 contradictions per grader, at the end of Section 5.3; before its revision, it contained this table.
 
 [CSV](table-a14.csv) · [Context](../06-human-reference.md#table-a14)
