@@ -10,9 +10,11 @@ This appendix provides the methods, aggregate results and source snapshots behin
 |---|---|---|
 | Historical teacher label | Binary operational grader decision, confirmed or inverted during lecturer review | Examples in prompts; teacher-alignment comparisons in RQ1 and RQ2 |
 | Independent human reference | Two model-blind author codings, with joint adjudication of disagreements of at least two raw levels and adjacent disagreements retained | Partial-credit and binary comparisons in RQ3 |
-| Recorded score | The decision returned with a rationale in the same model output | Internal score-rationale consistency in RQ4, not factual correctness |
+| Recorded score | The decision returned with a rationale in the same model output | Internal score-rationale consistency in the exploratory rationale audit ([A.6.2](06-human-reference.md#a62)), not factual correctness |
 
 The human reference is model-blind, but the authors had prior exposure to the course materials. It is not an external population of raters. [A.4.3](04-methods.md#a43) describes blinding and adjudication in full.
+
+Some terms differ between the article and this appendix. The article’s *runs* are the *arms* or *model prediction artifacts* here, its *raters* are the *coders*, its *operational-grader baseline* is the *incumbent-agreement reference*, and its *request settings of this study* are the *harmonized settings*.
 
 | Scale | Values or rule | Interpretation |
 |---|---|---|

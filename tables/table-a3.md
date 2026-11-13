@@ -10,7 +10,7 @@
 | P1, API arm (primary) | Mistral Small 3.2 24B | OpenRouter | 0 | grid |
 | P1, first run (superseded, D10) | API arm; local arm = original base run | OpenRouter; vLLM | 0.2 | grid |
 | Guided prompt (S1) | four original on-prem. models | vLLM, local | 0.2 | grid |
-| Rationale (RQ4 of the article) | four original on-prem. models | vLLM, local | 0.2 | grid |
+| Rationale (exploratory audit) | four original on-prem. models | vLLM, local | 0.2 | grid |
 | Partial credit (RQ3 of the article) | four original on-prem. models | vLLM, local | 0.2 | grid |
 | Prompt deconfounding, 3 prompts (expl.) | four original on-prem. models | vLLM, local | 0.2 | grid |
 | Reproducibility reruns (D12) | four original on-prem. models | vLLM, local | 0.2 | grid |

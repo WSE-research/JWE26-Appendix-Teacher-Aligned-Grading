@@ -5,4 +5,4 @@ RQ1,Decision component (Jev) behind the adapter; offline referral,Teacher label,
 RQ2,Number of teacher-rated examples for the new models,Teacher label,Agreement per example count; threshold attainment,Exploratory
 RQ3,Output scale: partial-credit level,Independent model-blind reference; teacher label for contrast,"Partial-credit agreement (QWK); rows, inter-rater agreement over distinct texts",Exploratory
 RQ3,Binary decisions of the base arms,Human reference binarized from its five-level scale (A.4.3); teacher label for contrast,Binary agreement with the reference (Cohen's $\kappa$); rows,Post hoc exploratory
-RQ4,Output extension: rationale,Grader's own recorded score,Score–rationale contradictions and coverage per score-blind instrument,Exploratory
+Audit (A.6.2),Output extension: rationale,Grader's own recorded score,Score–rationale contradictions and coverage per score-blind instrument,Exploratory
