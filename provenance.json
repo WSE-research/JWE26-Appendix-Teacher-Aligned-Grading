@@ -147,7 +147,7 @@
   },
   "revision_structure_sync": {
     "date": "2026-11-13",
-    "article_state": "Revision working copy after shortening, based on article revision 1c4755f; the final revision hash is recorded at resubmission.",
+    "article_state": "Shortened revision, article repository main ed16b84 (synced 2026-11-13), based on 1c4755f.",
     "changes": [
       "Article section references renumbered: former 4.4 and 4.5 are now 4.3 and 4.4; validity is 6.4; architecture and extensions are both 3.2.",
       "The rationale audit is no research question of the article any more; RQ4 mentions replaced by the exploratory rationale audit, reported in A.6.2 and A.4.4.",
@@ -155,6 +155,7 @@
       "A.3.3 lists the analysis-plan identifiers P1 and S1 to S6, including the three secondary tests removed from the article's test table.",
       "Added statements moved out of the article: decision-component design intent, on-premises selection scope, judge family, discordant-pair constraint, student-perspective reasoning, pool-reuse reason, open future-work item, terminology note."
     ],
-    "unchanged": "All quantitative result cells, figure aggregates, prompts and source snapshots."
+    "unchanged": "All quantitative result cells, figure aggregates, prompts and source snapshots.",
+    "article_revision": "ed16b84"
   }
 }
